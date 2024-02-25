@@ -7,7 +7,7 @@ import MovieCard from './components/MovieCard';
 // omdb api key
 // d3a97ed5
 
-const API_URL = 'http://www.omdbapi.com/?apikey=d3a97ed5';
+const API_URL = 'https://www.omdbapi.com/?apikey=d3a97ed5';
 
 // const movieExample = {
 //     "Title": "Cars",
@@ -29,7 +29,7 @@ const App  = () => {
     }
 
     useEffect(() => {
-        searchMovies('cars');
+        searchMovies('Harry Potter');
     }, []);
 
     return  (
