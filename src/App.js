@@ -3,7 +3,7 @@ import React from "react";
 import './App.css'
 import searchIcon from './search.svg';
 import MovieCard from './components/MovieCard';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 // omdb api key
 // d3a97ed5
 
@@ -63,7 +63,6 @@ const App  = () => {
                     </div>
                 )
             }
-        <SpeedInsights />
         </div>
     );
 }
