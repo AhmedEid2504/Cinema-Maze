@@ -63,10 +63,6 @@ const App  = () => {
                     </div>
                 )
             }
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 0bc35de (adds speed insight from vercel)
         </div>
     );
 }
