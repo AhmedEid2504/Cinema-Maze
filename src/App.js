@@ -28,6 +28,12 @@ const App  = () => {
         setMovies(data.Search);
     }
 
+    const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+        searchMovies(searchTerm);
+    }
+    };
+
     useEffect(() => {
         searchMovies('Harry Potter');
     }, []);
@@ -39,9 +45,11 @@ const App  = () => {
 
             <div className="search">
                 <input 
+                    type='text'
                     placeholder="Search for Movie"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
+                    onKeyPress={handleKeyPress}
                 />
                 <img 
                     src={searchIcon} 
